@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(../images/bg.png) no-repeat center;
+    background-size: 100%;
+    background-blend-mode: saturation;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.canvases {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.gif {
+    width: 12vw;
+}
+
+.gif img {
+    max-width: 100%;
+}
+
+.canvas1 {
+    background: url(../images/ca-board.png) no-repeat center;
+    background-size: contain;
+    object-fit: fill;
+    width: 22vw;
+    height: 22vw;
+    position: relative;
+}
+
+.canvas2 {
+    background: url(../images/wa-board.png) no-repeat center;
+    background-size: contain;
+    object-fit: fill;
+    width: 22vw;
+    height: 22vw;
+    position: relative;
+}
+
+.canvas3 {
+    background: url(../images/wo-board.png) no-repeat center;
+    background-size: contain;
+    object-fit: fill;
+    width: 22vw;
+    height: 22vw;
+    position: relative;
+}
+
+canvas {
+    /* border: 1px solid #ccc; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 2vw 0;
+    width: 90%;
+    /* height: 178px; */
+    z-index: 1;
+}
